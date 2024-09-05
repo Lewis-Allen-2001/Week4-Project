@@ -75,3 +75,30 @@ form#submiting-messages button:hover {
 #messageboard .message:last-child {
   border-bottom: none;
 }
+
+/* Media Query for mobile devices */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+    margin: 10px 0;
+  }
+
+  form#submiting-messages input {
+    max-width: 100%;
+    font-size: 0.9em;
+    padding: 8px;
+  }
+
+  form#submiting-messages button {
+    font-size: 1em;
+    padding: 8px 16px;
+  }
+
+  #messageboard {
+    padding: 15px;
+  }
+
+  #messageboard .message {
+    font-size: 0.9em;
+  }
+}
