@@ -4,7 +4,7 @@ const messageboardContainer = document.getElementById("messageboard");
 //fetching stuff from the server (the server fetches data from the db)
 async function getmessageboard() {
   const response = await fetch(
-    "https://week4-project-yjav.onrender.com/messageboard"
+    "https://week4-project-tb61.onrender.com/messageboard"
   );
   const data = await response.json();
   console.log(data);
@@ -30,7 +30,7 @@ async function handlePostMessages(event) {
   const data = Object.fromEntries(formData);
   console.log(data);
 
-  await fetch("https://week4-project-yjav.onrender.com/messageboard", {
+  await fetch("https://week4-project-tb61.onrender.com/messageboard", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
